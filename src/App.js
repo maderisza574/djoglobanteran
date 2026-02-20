@@ -7,7 +7,6 @@ import menuAyamGeprek from './assets/ayam_geprek.jpg'; // gambar mendoan
 import esTeh from './assets/es_teh.jpg';
 import esJeruk from './assets/es_jeruk.jpg';
 import ingkungAyam from './assets/ingkung_ayam.jpg';
-import interior from './assets/logo.jpeg'; // gambar interior
 import nuansaImage from './assets/logo.jpeg'; // gambar nuansa djoglo
 import kolamImage from './assets/logo.jpeg'; // gambar kolam ikan
 import galeriImage from './assets/logo.jpeg'; // gambar galeri antik
@@ -64,7 +63,7 @@ const App = () => {
       harga: "Rp 28.000",
       image: ayamBakar,
       popular: true,
-      waMessage: "Halo%20Djoglo%20Banteran%2C%20saya%20mau%20pesan%20Nasi%20Timbel%20Djoglo"
+      waMessage: "Halo%20Djoglo%20Banteran%2C%20saya%20mau%20pesan%20Ayam%20Bakar"
     },
     { 
       nama: "Gurame Bakar", 
@@ -72,15 +71,15 @@ const App = () => {
       harga: "Rp 45.000",
       image: menuGurame,
       popular: true,
-      waMessage: "Halo%20Djoglo%20Banteran%2C%20saya%20mau%20pesan%20Gurame%20Bakar%20Madu"
+      waMessage: "Halo%20Djoglo%20Banteran%2C%20saya%20mau%20pesan%20Gurame%20Bakar"
     },
     { 
-      nama: "Ayam Bakar", 
+      nama: "Ayam Geprek", 
       desc: "Ayam goreng crispy yang digeprek dengan sambal pedas mantap, siap bikin lidah bergoyang dan nagih terus.", 
       harga: "Rp 15.000",
       image: menuAyamGeprek,
       popular: false,
-      waMessage: "Halo%20Djoglo%20Banteran%2C%20saya%20mau%20pesan%20Mendoan%20Banteran"
+      waMessage: "Halo%20Djoglo%20Banteran%2C%20saya%20mau%20pesan%20Ayam%20Geprek"
     },
     { 
       nama: "Es Teh", 
@@ -88,7 +87,7 @@ const App = () => {
       harga: "Rp 8.000",
       image: esTeh,
       popular: false,
-      waMessage: "Halo%20Djoglo%20Banteran%2C%20saya%20mau%20pesan%20Es%20Teh%20Tarik"
+      waMessage: "Halo%20Djoglo%20Banteran%2C%20saya%20mau%20pesan%20Es%20Teh"
     },
     { 
       nama: "Es Jeruk", 
@@ -96,15 +95,15 @@ const App = () => {
       harga: "Rp 8.000",
       image: esJeruk,
       popular: false,
-      waMessage: "Halo%20Djoglo%20Banteran%2C%20saya%20mau%20pesan%20Es%20Teh%20Tarik"
+      waMessage: "Halo%20Djoglo%20Banteran%2C%20saya%20mau%20pesan%20Es%20Jeruk"
     },
     { 
       nama: "Ingkung Ayam Kampung", 
       desc: "Ayam kampung utuh dimasak dengan bumbu rempah tradisional khas Jawa, menghasilkan rasa autentik, gurih, dan penuh kehangatan.", 
-      harga: "Rp 8.000",
+      harga: "Rp 85.000",
       image: ingkungAyam,
-      popular: false,
-      waMessage: "Halo%20Djoglo%20Banteran%2C%20saya%20mau%20pesan%20Es%20Teh%20Tarik"
+      popular: true,
+      waMessage: "Halo%20Djoglo%20Banteran%2C%20saya%20mau%20pesan%20Ingkung%20Ayam%20Kampung"
     },
   ];
 
@@ -656,17 +655,6 @@ const App = () => {
   // Fungsi untuk membuka TikTok
   const openTikTok = () => {
     window.open(socialData.tiktok, '_blank');
-  };
-
-  // Hover effects
-  const handleHover = (e, isHover) => {
-    if (isHover) {
-      e.target.style.transform = 'translateY(-10px)';
-      e.target.style.boxShadow = '0 30px 50px rgba(0,0,0,0.2)';
-    } else {
-      e.target.style.transform = 'translateY(0)';
-      e.target.style.boxShadow = '0 15px 30px rgba(0,0,0,0.1)';
-    }
   };
 
   const handleButtonHover = (e, isHover) => {
